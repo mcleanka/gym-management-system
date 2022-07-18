@@ -8,7 +8,6 @@
 	<title>Home | Gym Management System</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/app.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
 		<div class="wrapper">
 
 			<header id="header">
-				<div class="container">
+				<div class="container display-flex">
 					<div class="header_left">
 						<a class="logo" href="#">GYM</a>
 					</div>
@@ -38,7 +37,98 @@
 			</header>
 
 			<main>
+				<div class="display-flex" style="margin-top: 8em">
+					<section>
+						<marquee behavior="" direction="left">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora suscipit cumque itaque
+							magnam neque reprehenderit nesciunt atque autem ab, aut officia provident, illum
+							repudiandae assumenda, officiis dicta perspiciatis ipsum quasi.
+						</marquee>
+					</section>
+					<section>
+						<div class="section-slider">
+							<div class="slider">
+								<div class="slide one active">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+								</div>
+								<div class="slide two">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+								</div>
+								<div class="slide three">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+								</div>
+								<div class="slide four">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+								</div>
+							</div>
+							<div class="controls">
+								<a href="javascript:void(0);" class="left">
+									<i class="fa fa-chevron-left"></i>
+								</a>
+								<a href="javascript:void(0);" class="right">
+									<i class="fa fa-chevron-right"></i>
+								</a>
+							</div>
+						</div>
+					</section>
+					<section>
+						<!-- <div style="padding-bottom: 15px;">
+							<p style="padding-bottom: 15px;">
+								<strong>
+									Page viewers: 45
+								</strong>
+							</p>
+							<p>
+								<strong>
+									Total Users: 45
+								</strong>
+							</p>
+						</div> -->
+						<form action="login.php" method="post" autocomplete="off">
+							<div class="form">
+								<h1>Sign In</h1>
 
+								<div class="imgcontainer">
+									<img src="./imgs/avatar.png" alt="Avatar" class="avatar">
+								</div>
+
+								<div class="wrapper">
+									<input type="text" name="username" required placeholder="Username">
+									<input type="password" name="password" required placeholder="Password">
+								</div>
+								<input type="submit" name="login" value="Log In">
+							</div>
+						</form>
+					</section>
+				</div>
 			</main>
 
 
@@ -72,6 +162,9 @@
 			</footer>
 		</div>
 	</div>
+
+	<script src="js/app.js"></script>
+
 </body>
 
 </html>
