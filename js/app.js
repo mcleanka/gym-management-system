@@ -46,7 +46,7 @@ function changeBackground() {
 			style = img.currentStyle || window.getComputedStyle(img, false),
 			bi = style.backgroundImage.slice(4, -1).replace(/"/g, "");
 		sliderElm.style.backgroundImage = `url('${bi}')`;
-	}, 800);
+	}, 500);
 }
 
 function activeSlide() {
@@ -68,3 +68,18 @@ rightElm.addEventListener("click", function () {
 	moveRight();
 	activeSlide();
 });
+
+
+$(window).on("hashchange", function () {
+	if (location.hash.slice(1) == "register") {
+		$(".card").addClass("extend");
+		$("#login").removeClass("selected");
+		$("#register").addClass("selected");
+	} else {
+		$(".card").removeClass("extend");
+		$("#login").addClass("selected");
+		$("#register").removeClass("selected");
+	}
+});
+
+$(window).trigger("hashchange");
