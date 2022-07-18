@@ -2,6 +2,9 @@
 @import url("../css/auth0.css");
 @import url("../css/slider.css");
 @import url("../css/helpers.css");
+
+@import url("../css/contact.css");
+
 @import url("../css/footer.css");
 
 * {
@@ -35,6 +38,7 @@ body {
 	left: 0;
 	top: 0;
 	width: 100%;
+	z-index: 99;
 }
 
 .container {

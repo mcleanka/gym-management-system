@@ -28,7 +28,6 @@
      	display: flex;
      	position: absolute;
      	width: 100%;
-     	z-index: 2;
      	overflow: hidden;
      }
 
@@ -72,19 +71,19 @@
      }
 
      .slider .slide.one .col {
-     	background-image: url("https://c4.wallpaperflare.com/wallpaper/892/692/922/howl-s-moving-castle-studio-ghibli-fantasy-art-clouds-daylight-hd-wallpaper-preview.jpg");
+     	background-image: url("../imgs/1.png");
      }
 
      .slider .slide.two .col {
-     	background-image: url("https://c4.wallpaperflare.com/wallpaper/362/276/920/nature-4k-pc-full-hd-wallpaper-preview.jpg");
+     	background-image: url("../imgs/2.png");
      }
 
      .slider .slide.three .col {
-     	background-image: url("https://c4.wallpaperflare.com/wallpaper/114/1008/41/one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg");
+     	background-image: url("../imgs/3.png");
      }
 
      .slider .slide.four .col {
-     	background-image: url("https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-preview.jpg");
+     	background-image: url("../imgs/4.png");
      }
 
      .slider .slide .col:nth-child(odd) {
@@ -97,7 +96,6 @@
 
      .slider .slide.active .col {
      	transition: transform 0.8s ease-out;
-     	z-index: 99;
      	transform: translateY(0);
      }
 
